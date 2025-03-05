@@ -1,0 +1,60 @@
+
+
+#imageGallery{
+
+   background-color: rgb(146, 141, 151); 
+    display: flex;
+
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+textarea{
+    width: 200px;
+    resize: none;
+}
+
+#Comment{
+    width: 500px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+body {
+    height: 500vh;
+}  
+
+
+.blockIcono{
+    background-color: rgb(238, 161, 110);
+    font-size: larger;
+    padding: 5px 20px;
+    border-radius: 15px;
+    
+}
+
+img{
+    width: 800px;
+    height: 800px;
+    padding: 40px 200px;
+}
+
+#submitCommentButton{
+    border-radius: 10px;
+    font-weight: bold;
+    height: 50px;
+    width: 100px;
+}
+
+#commentForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

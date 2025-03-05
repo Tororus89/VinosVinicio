@@ -1,0 +1,24 @@
+#informacionBanner{
+    width: 100%;
+    height: 300px;
+}
+p{
+    font-size: 20px;
+
+}
+
+#navBar{
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+
+#bodyContent{
+    padding: 0px 30%;
+}
+
+body{
+    background-color: #f2f2f2;
+    height: 200vh;
+}

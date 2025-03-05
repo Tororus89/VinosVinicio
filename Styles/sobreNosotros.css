@@ -1,0 +1,41 @@
+body{
+    background-color: lightgray;
+    height: fit-content;
+}
+#sobreNosotrosLogoDiv{
+    display: flex;
+    justify-content: center;
+}
+#sobreNosotrosLogo{
+    aspect-ratio: 1,1 ;
+
+}
+
+#informationDiv{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.informationTextBlock{
+    background-color: grey;
+    padding: 20px;
+    margin: 10px;
+    /*animation: slide-in, 2s, ease-in-out, 4s, 1, forwards;*/
+    animation-name: slide-in;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+
+
+}
+
+@keyframes slide-in {
+    from {
+      transform: translateY(300px);
+    }
+  
+    to {
+      transform: translateY(0px);
+    }
+  }
