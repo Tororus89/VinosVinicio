@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservar Tour</title>
-    <link rel="stylesheet" href="universalStyle.css">
-    <link rel="stylesheet" href="StyleReservarTour.css">
+    <link rel="stylesheet" href="Styles/universalStyle.css">
+    <link rel="stylesheet" href="Styles/StyleReservarTour.css">
+    <script src="tourReserve.js"></script>
     <style>
         .form-group {
             display: flex;
@@ -24,11 +25,22 @@
             margin: 0 auto;
         }
     </style>
+
 </head>
 <body>
+    <div id="successPopUp">
+        <div >
+            <h1>Reserva exitosa</h1>
+            <p>Gracias por reservar tu tour en Finca Iza. <br>
+                 Nos contactaremos contigo por medio del correo electronico que nos has proporcionado.</p>
+            <button onclick="closePopUp()">Cerrar</button>
+        </div>
+
+        
+    </div>
     <div id="navigationBar"> 
             
-        <a href="Indes.html">
+        <a href="Index.html">
             <div id="logoNavBar">   <!-- cambiar este div--> 
                <h1>
                 Tour de Vinos Finca Iza
@@ -53,7 +65,9 @@
 
     <div class="form-container">
         <h1>Reservar Tour</h1>
-        <form>
+       <!-- <form   action="https://formsubmit.co/your@email.com" method="POST"> --->
+        <form action=""></form>
+            <input type="hidden" name="_next" value=none>
             <div class="form-group">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Nombre" maxlength="20" required>
@@ -83,7 +97,7 @@
                 <label for="correo">Correo electronico:</label>
                 <input type="email" id="correo" name="correo" placeholder="correo electronico" required>
             </div>
-            <button type="submit">Reservar</button>
+            <button type="submit" onclick="reservarTourPopUp()">Reservar</button>
         </form>
         <!--
         <div class="input-group mb-3">
