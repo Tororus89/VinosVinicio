@@ -1,4 +1,4 @@
-function reservarTourPopUp(){
+/*function reservarTourPopUp(){
     const reservarTourPopUp = document.getElementById("successPopUp");
     reservarTourPopUp.style.display = "flex";
     reservarTourPopUp.style.justifyContent = "center";
@@ -11,3 +11,5 @@ function closePopUp(){
     document.getElementById("successPopUp").style.display = "none";
     document.getElementById("successPopUp").style.opacity = "0";
 }
+
+*/
