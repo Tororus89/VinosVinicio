@@ -1,13 +1,21 @@
 
 
-#imageGallery{
+/*#imageGallery{
 
-   background-color: rgb(146, 141, 151); 
-    display: flex;
+   background-color: rgb(146, 141, 151);  
 
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: center;
+
+} 
+*/
+
+
+#imageGallery img {
+    display: block;
+    width: 50%; /* Adjust the width as needed */
+    height: auto;
+    object-fit: cover;
+
+    margin: 10px auto; /* Center the images and add some space between them */
 }
 
 textarea{
@@ -34,12 +42,13 @@ body {
     
 }
 
-img{
-    width: 800px;
-    height: 800px;
-    padding: 40px 200px;
+.blockIcono:hover{
+    background-color: rgb(238, 161, 110);
+    font-size: larger;
+    padding: 5px 20px;
+    border-radius: 15px;
+    color: white;
 }
-
 #submitCommentButton{
     border-radius: 10px;
     font-weight: bold;
@@ -57,4 +66,19 @@ img{
 a{
     text-decoration: none;
     color: black;
+}
+
+
+@media screen and (max-width: 700px) {
+    #imageGallery img {
+        width: 100%; /* Adjust the width as needed */
+        height: max-content;
+    }
+
+    iframe{
+        height: 700px;
+        width: 100%;
+
+    }
+    
 }
